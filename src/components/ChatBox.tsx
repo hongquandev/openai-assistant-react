@@ -1,7 +1,6 @@
 import { Box } from "@mui/material";
 import { useCallback, useRef, useState } from "react";
 import { sendMessagesToGPT, type MessageModel } from "../api/chat";
-import { useApiKey } from "../api/key";
 import InputBox from "./InputBox";
 import MessageBlock from "./MessageBlock";
 
@@ -15,7 +14,6 @@ const ChatBox = () => {
     },
   ]);
   const chatBoxRef = useRef<HTMLDivElement>(null);
-  const [API_KEY] = useApiKey();
 
   const handleSendMessage = useCallback(
     (content: string) => {
@@ -91,7 +89,7 @@ const ChatBox = () => {
         ]);
       }
     },
-    [API_KEY]
+    []
   );
 
   const handleFinishTyping = useCallback(
