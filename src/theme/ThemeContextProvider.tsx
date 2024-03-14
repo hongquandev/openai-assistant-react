@@ -1,27 +1,26 @@
 import {
-  useState,
-  useEffect,
-  useMemo,
   createContext,
   useContext,
-  type FC,
-  type PropsWithChildren,
+  useEffect,
+  useMemo,
+  useState,
+  type FC
 } from "react";
 
 import {
-  createTheme,
   ThemeProvider,
+  createTheme,
   useMediaQuery,
   type PaletteMode,
 } from "@mui/material";
-import { lightTheme, darkTheme } from "./theme";
+import { darkTheme, lightTheme } from "./theme";
 
 export const ThemeContext = createContext({
   toggleColorMode: () => {},
 });
 export const useThemeContext = () => useContext(ThemeContext);
 
-export const ThemeContextProvider: FC<PropsWithChildren> = ({ children }) => {
+export const ThemeContextProvider: FC = ({ children }) => {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const [mode, setMode] = useState<PaletteMode>(
     prefersDarkMode ? "dark" : "light"
