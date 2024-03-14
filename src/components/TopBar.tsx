@@ -1,8 +1,8 @@
-import { AppBar, Toolbar, Tooltip, IconButton, useTheme } from "@mui/material";
-import KeyPopper from "./KeyPopper";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LightModeIcon from "@mui/icons-material/LightMode";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
+import { AppBar, IconButton, Toolbar, Tooltip, useTheme } from "@mui/material";
+import KeyPopper from "./KeyPopper";
 
 import { useThemeContext } from "../theme/ThemeContextProvider";
 
@@ -22,7 +22,7 @@ const TopBar = () => {
             component="a"
             size="small"
             color="inherit"
-            href="https://github.com/glitchboyl/chatgpt-demo"
+            href="https://github.com/hongquandev/openai-assistant-react"
             target="_blank"
             rel="noopener"
             sx={{

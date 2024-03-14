@@ -78,7 +78,7 @@ const MessageBlock: FC<MessageBlockProps> = ({ model, onFinishTyping }) => {
     if (model.role !== "user") {
       setThinking(true);
       if (model.type !== "typing" && parsedHTML !== "") {
-        let typingTimer: number | null | undefined = null;
+        let typingTimer: number | null | undefined | any = null;
         let i = 0;
         const htmlStringFragments = splitHTMLString(parsedHTML);
         const typeFragment = (currentIndex: number) => {
