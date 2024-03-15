@@ -1,6 +1,10 @@
-# ChatGPT demo
+# ChatGPT Assistant React App Demo
 
-[Try the demo online](https://chatgpt-demo-glitchboyl.vercel.app/)
+[Try the demo online](https://openai-assistant-react.vercel.app/)
+
+This is a simple React application that uses the OpenAI GPT-3 API to create a chat interface.
+Using the OpenAI Assistant API, you can create a chat interface that can answer questions, provide information, and more.
+Link to the [OpenAI Assistant API](https://platform.openai.com/docs/assistants/)
 
 ## Start
 
